@@ -1,0 +1,15 @@
+D:\C#\UserReg\UserReg\bin\Debug\net6.0\UserReg.exe
+D:\C#\UserReg\UserReg\bin\Debug\net6.0\UserReg.deps.json
+D:\C#\UserReg\UserReg\bin\Debug\net6.0\UserReg.runtimeconfig.json
+D:\C#\UserReg\UserReg\bin\Debug\net6.0\UserReg.dll
+D:\C#\UserReg\UserReg\bin\Debug\net6.0\UserReg.pdb
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.csproj.AssemblyReference.cache
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.AssemblyInfoInputs.cache
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.AssemblyInfo.cs
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.csproj.CoreCompileInputs.cache
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.dll
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\refint\UserReg.dll
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.pdb
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\UserReg.genruntimeconfig.cache
+D:\C#\UserReg\UserReg\obj\Debug\net6.0\ref\UserReg.dll
