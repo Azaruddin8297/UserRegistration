@@ -4,44 +4,49 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter The FirstName");
-            string Name = Console.ReadLine();
-            bool val = validation.Check(Name);
-            if (val)
-            {
-                Console.WriteLine("FirstName is {0}", Name);
-            }
-            else
-            {
-                Console.WriteLine("Enter Valid Name");
-            }
-            Console.WriteLine("Enter The LastName");
-            string LName = Console.ReadLine();
-            bool val1 = validation.Check(LName);
-            if (val1)
-            {
-                Console.WriteLine("LastName is {0}", LName);
-            }
-            else
-            {
-                Console.WriteLine("Enter Valid Name");
-            }
-            Console.WriteLine("FullName is {0} {1}", Name, LName);
-            Console.WriteLine("***************************************");
-            Console.WriteLine("Enter Valid Email ID");
-            validation v = new validation();
-            string EN = Console.ReadLine();
-            v.ValidateEmail(EN);
-            Console.WriteLine("***************************************");
-            Console.WriteLine("Enter Valid Phone Number");
-            validation v1 = new validation();
-            string PH = Console.ReadLine();
-            v1.ValidatePhone(PH);
+            //Console.WriteLine("Enter The FirstName");
+            //string name = Console.ReadLine();
+            //bool val = validation.Check(name);
+            //if (val)
+            //{
+            //    Console.WriteLine("FirstName is {0}", name);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Enter Valid Name");
+            //}
+            //Console.WriteLine("Enter The LastName");
+            //string lName = Console.ReadLine();
+            //bool val1 = validation.Check(lName);
+            //if (val1)
+            //{
+            //    Console.WriteLine("LastName is {0}", lName);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Enter Valid Name");
+            //}
+            //Console.WriteLine("FullName is {0} {1}", name, lName);
+            //Console.WriteLine("***************************************");
+            //Console.WriteLine("Enter Valid Email ID");
+            //validation v = new validation();
+            //string email = Console.ReadLine();
+            //v.ValidateEmail(email);
+            //Console.WriteLine("***************************************");
+            //Console.WriteLine("Enter Valid Phone Number");
+            //validation v1 = new validation();
+            //string phone = Console.ReadLine();
+            //v1.ValidatePhone(phone);
+            //Console.WriteLine("***************************************");
+            //Console.WriteLine("Enter Valid Password");
+            //validation p1 = new validation();
+            //string pass = Console.ReadLine();
+            //p1.ValidatePassword(pass);
             Console.WriteLine("***************************************");
             Console.WriteLine("Enter Valid Password");
-            validation p1 = new validation();
-            string Pass = Console.ReadLine();
-            p1.ValidatePassword(Pass);
+            validation p2 = new validation();
+            string pass1 = Console.ReadLine();
+            p2.ValidatePassword1(pass1);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace UserReg
         public static string Email = "^[A-Za-z0-9]+[@][a-z]+[.][a-z]{2,3}$";
         public static string Phone_Number = "^[9][1][ ][6-9]{1}[0-9]{9}$";
         public static string Password = "^[a-zA-Z0-9]{8}$";
+        public static string Password1 = "^(?=.*[0-9])[a-zA-Z0-9]{8}$";
         public static bool Check(string name)
         {
             return Regex.IsMatch(name, FirstName);
@@ -52,6 +53,19 @@ namespace UserReg
         {
             Regex reg = new Regex(Password);
             bool valid = reg.IsMatch(password);
+            if (valid)
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+        }
+        public void ValidatePassword1(string password1)
+        {
+            Regex reg = new Regex(Password1);
+            bool valid = reg.IsMatch(password1);
             if (valid)
             {
                 Console.WriteLine("Valid");
