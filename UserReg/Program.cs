@@ -37,6 +37,11 @@
             validation v1 = new validation();
             string PH = Console.ReadLine();
             v1.ValidatePhone(PH);
+            Console.WriteLine("***************************************");
+            Console.WriteLine("Enter Valid Password");
+            validation p1 = new validation();
+            string Pass = Console.ReadLine();
+            p1.ValidatePassword(Pass);
         }
     }
 }

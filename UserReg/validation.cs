@@ -13,6 +13,7 @@ namespace UserReg
         public static string LastName = "^[A-Z]{1}[a-z]{3,}$";
         public static string Email = "^[A-Za-z0-9]+[@][a-z]+[.][a-z]{2,3}$";
         public static string Phone_Number = "^[9][1][ ][6-9]{1}[0-9]{9}$";
+        public static string Password = "^[a-zA-Z0-9]{8}$";
         public static bool Check(string name)
         {
             return Regex.IsMatch(name, FirstName);
@@ -38,6 +39,19 @@ namespace UserReg
         {
             Regex reg = new Regex(Phone_Number);
             bool valid = reg.IsMatch(phone);
+            if (valid)
+            {
+                Console.WriteLine("Valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid");
+            }
+        }
+        public void ValidatePassword(string password)
+        {
+            Regex reg = new Regex(Password);
+            bool valid = reg.IsMatch(password);
             if (valid)
             {
                 Console.WriteLine("Valid");
