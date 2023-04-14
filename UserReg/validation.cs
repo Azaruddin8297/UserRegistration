@@ -21,14 +21,14 @@ namespace UserReg
 
         public static bool Check(string name)
         {
-           bool result = Regex.IsMatch(name, FirstName);
-            if(result==true)
+            bool result = Regex.IsMatch(name, FirstName);
+            if (result == true)
             {
                 return true;
             }
             else
             {
-                return false;
+                throw new CustomException("Enter the Valid FristName");
             }
         }
         public static bool Check2(string name1)
@@ -40,7 +40,7 @@ namespace UserReg
             }
             else
             {
-                return false;
+                throw new CustomException("Enter the Valid LastName");
             }
         }
         public bool ValidateEmail(string mail)
@@ -53,7 +53,7 @@ namespace UserReg
             }
             else
             {
-                return false;
+                throw new CustomException("Enter valid Email");
             }
         }
         public bool ValidatePhone(string phone)
@@ -66,7 +66,7 @@ namespace UserReg
             }
             else
             {
-                return false;
+                throw new CustomException("Enter valid Phone");
             }
         }
         public bool ValidatePassword(string password)
@@ -79,7 +79,7 @@ namespace UserReg
             }
             else
             {
-                return false;
+                throw new CustomException("Enter valid Password");
             }
         }
         public bool ValidatePassword1(string password1)
@@ -92,7 +92,7 @@ namespace UserReg
             }
             else
             {
-                return false;
+                throw new CustomException("Enter valid Password1");
             }
         }
         public bool ValidatePassword2(string password2)
@@ -105,20 +105,20 @@ namespace UserReg
             }
             else
             {
-                return false;
+                throw new CustomException("Enter valid Password2");
             }
         }
         public bool ValidatePassword3(string password3)
         {
             Regex reg = new Regex(Password3);
             bool valid = reg.IsMatch(password3);
-          if (valid == true)
+            if (valid == true)
             {
                 return true;
             }
             else
             {
-                return false;
+                throw new CustomException("Enter valid Password3");
             }
         }
     }
