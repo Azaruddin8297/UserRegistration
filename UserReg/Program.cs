@@ -1,21 +1,25 @@
-﻿namespace UserReg
+﻿namespace MoodAnalyzer
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter The FirstName");
-            string Name = Console.ReadLine();
-           bool val = validation.Check(Name);
-            //Console.WriteLine(val);
-            if (val)
-            {
-                Console.WriteLine("FirstName is {0}", Name);
-            }
-            else
-            {
-                Console.WriteLine("Enter Valid Name");
-            }
+
+           
+            MoodTest mt1 = new MoodTest("I am Any Thing");
+            Console.WriteLine(mt1.Analyzer());
+
+            Console.WriteLine("***********************");
+
+            MoodTest mt3 = new MoodTest(null);
+            Console.WriteLine(mt3.Analyzer());
+
+            Console.WriteLine("***********************");
+
+            MoodTest mt = new MoodTest(string.Empty);
+            Console.WriteLine(mt.Analyzer());
+            
+            
         }
     }
 }
