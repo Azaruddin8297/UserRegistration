@@ -8,39 +8,92 @@ namespace UserTest
         [TestMethod]
         public void TestMethod1()
         {
-            //Arrange
+            
             validation vd = new validation();
-
-            //Act
-
-            bool email =  vd.ValidateEmail("ajar@gmail.com");
-            bool Phone = vd.ValidatePhone("91 8297214219");
-            bool pass = vd.ValidatePassword("Ajar1234");
-            bool paas1 = vd.ValidatePassword1("Ajar1234");
-            bool paas2 = vd.ValidatePassword1("Ajar1234");
-            bool paas3 = vd.ValidatePassword1("Ajar1234");
-
-
-            //Assert
             //FirstName
-            Assert.AreEqual(validation.Check("Azar"), true);
+            string Expected = "Enter the Valid FristName";
+            try
+            {
+                bool result = validation.Check("1");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected, ex.Message);
+            }
+
             //LastName
-            Assert.AreEqual(validation.Check("Azar"), true);
-            //Email
-            Assert.AreEqual(email, true);
-            //Phone
-            Assert.AreEqual(Phone, true);
-            //password
-            Assert.AreEqual(pass, true);
-            //password1
-            Assert.AreEqual(paas1, true);
-            //password2
-            Assert.AreEqual(paas2, true);
-            //password3
-            Assert.AreEqual(paas3, true);
+            string Expected1 = "Enter the Valid LastName";
+            try
+            {
+                bool result = validation.Check2("1");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected1, ex.Message);
+            }
+            ////Email
+            string Expected2 = "Enter valid Email";
+            try
+            {
+                bool email = vd.ValidateEmail("@ahsda");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected2, ex.Message);
+            }
+            ////Phone
+            string Expected3 = "Enter valid Phone";
+            try
+            {
+                bool Phone = vd.ValidatePhone("2972");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected3, ex.Message);
+            }
+            ////password
+            string Expected4 = "Enter valid Password";
+            try
+            {
+                bool Pass = vd.ValidatePassword("a");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected4, ex.Message);
+            }
+            ////password1
+            string Expected5 = "Enter valid Password1";
+            try
+            {
+                bool pass1 = vd.ValidatePassword1("a");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected5, ex.Message);
+            }
+            ////password2
+            string Expected6 = "Enter valid Password2";
+            try
+            {
+                bool pass2 = vd.ValidatePassword2("a");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected6, ex.Message);
+            }
+            ////password3
+            string Expected7 = "Enter valid Password3";
+            try
+            {
+                bool pass1 = vd.ValidatePassword3("a");
+            }
+            catch (CustomException ex)
+            {
+                Assert.AreEqual(Expected7, ex.Message);
+            }
 
         }
-   
+
     }
-    
+
 }
